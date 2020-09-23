@@ -1,0 +1,121 @@
+/*-----------BASE CODE---------
+------------------------------*/
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Lato", "Arial", "Sans-serif";
+  font: rgb(51, 51, 51);
+  background-color: rgb(246, 243, 243);
+  text-rendering: optimizeLegibility; /* To render the fonts in perfect way */
+}
+
+/*-----------REUSABLE COMPONENT-----to position the row box middle over the page----------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------*/
+.row {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+/*-----------HEADINGS--------------------
+----------------------------------------*/
+h1 {
+  font-size: 40px; /*200% of base html*/
+  word-spacing: 4px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+/*-----------HEADER---------------------------------------HEADER----------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------*/
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.447), rgba(0, 0, 0, 0.844)),
+    url(background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /*this vh unit will increase the height and cover the full header section*/
+}
+
+.hero-text-box {
+  position: absolute;
+  max-width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /*will fix the middle position on page*/
+  color: whitesmoke;
+  font-weight: 300;
+}
+/*-----------BUTTONS----------------------
+----------------------------------------*/
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  border: 1px;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-weight: 300px;
+
+  color: white;
+  border: 1px solid #e67e22;
+  border-radius: 200px;
+}
+.btn-full:link,
+.btn-full:visited {
+  background-color: #e67e22;
+}
+.btn-ghost:link,
+.btn-ghost:visited {
+  color: #e67e22;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #ffaf58;
+}
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid #ffaf58;
+}
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid #ffaf58;
+  color: white;
+}
+/*-----------logo------------------need to change--------------
+---------------------------*/
+.logo {
+  height: 100px;
+  width: auto;
+  margin-top: 20px;
+  float: left;
+}
+
+/*--------NAV BAR-------------
+------------------------------*/
+.main-nav {
+  float: right;
+  margin-top: 50px;
+}
+.main-nav ul {
+  list-style: none; /*remove the bullets*/
+}
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+  text-decoration: none;
+  color: white;
+  font-size: 90%; /* HTML base is 20px for 18px,we need to add % 18/20=90%*/
+  text-transform: uppercase;
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
+  transition: border-buttom 0.2s;
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #e67e22;
+}
