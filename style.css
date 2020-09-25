@@ -20,14 +20,33 @@ html {
   margin: 0 auto;
   max-width: 1140px;
 }
+.box {
+  padding: 1%;
+}
 /*-----------HEADINGS--------------------
 ----------------------------------------*/
-h1 {
-  font-size: 40px; /*200% of base html*/
-  word-spacing: 4px;
+h1,
+h2,
+h3 {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+h1 {
+  font-size: 200%; /*200% of base html*/
+  word-spacing: 4px;
+}
+h2 {
+  font-size: 140%;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 100;
+  word-spacing: 4px;
+}
+h3 {
+  font-size: 100%;
+  font-weight: 80;
+}
+
 /*-----------HEADER---------------------------------------HEADER----------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------*/
 header {
@@ -91,9 +110,13 @@ header {
   margin-top: 20px;
   float: left;
 }
+/*=====================ICON=====================================*/
+ion-icon {
+  font-size: 250%;
+  color: #e67e22;
+}
 
-/*--------NAV BAR-------------
-------------------------------*/
+/*===================================NAV BAR===========================*/
 .main-nav {
   float: right;
   margin-top: 50px;
@@ -118,4 +141,20 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
   border-bottom: 2px solid #e67e22;
+}
+/*===============================Section1==================================*/
+section {
+  padding: 50px 0;
+  letter-spacing: 100;
+}
+.long-copy {
+  text-align: center;
+  padding: 0 100px;
+  line-height: 135%;
+  /* width: 90%;
+  margin-left: 15%;*/
+}
+.box p {
+  line-height: 145%;
+  font-size: 90%;
 }
