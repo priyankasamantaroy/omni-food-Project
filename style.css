@@ -159,6 +159,11 @@ section {
   font-size: 90%;
 }
 /*===================================MEALS SECTION===========================*/
+.section-meals {
+  padding: 0;
+  
+};
+}
 .meals-showcase {
   list-style: none;
   width: 100%;
@@ -167,13 +172,21 @@ section {
   display: block;
   float: left;
   width: 25%;
-}
+  }
 .meal-photo {
   width: 100%;
   height: 100%;
   margin: 0;
+  overflow: hidden;
+  background-color: black;/*will give a black shaddow over the opac image*/
 }
 .meal-photo img {
+  opacity: 0.7; /*lower the opacity faded the img color*/
   width: 100%;
-  height: 100%;
+  transform: scale(1.25);
+  transition: transform 0.5s; /*transformation will take 5secs to zoomout from the default zoomin img*/
+}
+/*-------zoomout images with relatively smaller size--(103%)---*/
+.meal-photo img:hover {
+  transform: scale(1.03);
 }
