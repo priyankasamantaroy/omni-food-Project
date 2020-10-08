@@ -15,7 +15,10 @@ html {
 }
 
 /*-----------REUSABLE COMPONENT-----to position the row box middle over the page----------------------------------------------
+
+color: #e67e22;
 -----------------------------------------------------------------------------------------------------------------------*/
+
 .row {
   margin: 0 auto;
   max-width: 1140px;
@@ -23,8 +26,27 @@ html {
 .box {
   padding: 1%;
 }
-/*-----------HEADINGS--------------------
-----------------------------------------*/
+section {
+  padding: 50px 0;
+  letter-spacing: 100;
+}
+
+/*==================================================LINKS===========================================================================*/
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #e67e22;
+  border-bottom: 1px solid #e67e22;
+  padding-bottom: 1px;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+a:hover,
+a:active {
+  border-bottom: 1px solid transparent;
+  color: #ffaf58;
+}
+
+/*======================================================HEADINGS==================================================================================*/
 h1,
 h2,
 h3 {
@@ -39,8 +61,8 @@ h2 {
   font-size: 140%;
   text-align: center;
   margin-bottom: 50px;
-  font-weight: 100;
-  word-spacing: 4px;
+  font-weight: 90;
+  word-spacing: 5px;
 }
 h3 {
   font-size: 100%;
@@ -55,6 +77,7 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh; /*this vh unit will increase the height and cover the full header section*/
+  background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -143,10 +166,6 @@ ion-icon {
   border-bottom: 2px solid #e67e22;
 }
 /*===============================Section1==================================*/
-section {
-  padding: 50px 0;
-  letter-spacing: 100;
-}
 .long-copy {
   text-align: center;
   padding: 0 100px;
@@ -158,35 +177,86 @@ section {
   line-height: 145%;
   font-size: 90%;
 }
-/*===================================MEALS SECTION===========================*/
+/*===================================MEALS SECTION================================================*/
 .section-meals {
   padding: 0;
-  
-};
+  margin-bottom: 15px;
 }
+
 .meals-showcase {
   list-style: none;
   width: 100%;
+  float: clear both;
 }
 .meals-showcase li {
   display: block;
   float: left;
   width: 25%;
-  }
+}
 .meal-photo {
   width: 100%;
   height: 100%;
   margin: 0;
   overflow: hidden;
-  background-color: black;/*will give a black shaddow over the opac image*/
+  background-color: black; /*will give a black shaddow over the opac image*/
 }
 .meal-photo img {
-  opacity: 0.7; /*lower the opacity faded the img color*/
+  opacity: 0.5; /*lower the opacity faded the img color*/
   width: 100%;
   transform: scale(1.25);
-  transition: transform 0.5s; /*transformation will take 5secs to zoomout from the default zoomin img*/
+  transition: transform 0.5s, opacity0.5s; /*transformation will take 5secs to zoomout from the default zoomin img*/
 }
 /*-------zoomout images with relatively smaller size--(103%)---*/
 .meal-photo img:hover {
   transform: scale(1.03);
+  opacity: 0.9; /*hover will show a lighter image*/
+}
+/*=============================HOW IT WORKS===========================SECTION-STEPS============================================================================*/
+.section-steps {
+  margin-top: 40%;
+  background-color: lightgrey;
+}
+.steps-box:first-child {
+  text-align: right;
+  padding-right: 30px;
+}
+.steps-box:last-child {
+  padding-left: 30px;
+}
+.app-screen {
+  width: 40%;
+}
+.work-step {
+  margin-bottom: 50px;
+}
+.work-step div {
+  color: #e67e22;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  border: 2px solid #e67e22;
+  text-align: center;
+  padding: 10px 10px;
+  float: left;
+  margin-right: 15px;
+}
+.btn-app-image:first-child {
+  height: 50%;
+}
+.btn-app-image:last-child {
+  margin-left: 50px;
+}
+.btn-app-image:link,
+.btn-app-image:visited {
+  border-bottom: 2px solid transparent;
+}
+/*=======linear-gradient(rgba(0, 0, 0, 0.884), rgba(0, 0, 0, 0.849))==================================our cities section=====================================*/
+
+/*=========================================section-testimonials=====================================*/
+.section-testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.884), rgba(0, 0, 0, 0.849)),
+    url(Best-Indian-Diet-Plan.jpg);
+  background-color: blue;
+  background-size: cover;
+  color: red;
 }
