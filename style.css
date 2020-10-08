@@ -225,6 +225,7 @@ ion-icon {
 }
 .app-screen {
   width: 40%;
+  border-radius: 10%;
 }
 .work-step {
   margin-bottom: 50px;
@@ -250,13 +251,20 @@ ion-icon {
 .btn-app-image:visited {
   border-bottom: 2px solid transparent;
 }
-/*=======linear-gradient(rgba(0, 0, 0, 0.884), rgba(0, 0, 0, 0.849))==================================our cities section=====================================*/
+/*=========================================our cities section========================================*/
 
 /*=========================================section-testimonials=====================================*/
-.section-testimonials {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.884), rgba(0, 0, 0, 0.849)),
+
+.testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
     url(Best-Indian-Diet-Plan.jpg);
-  background-color: blue;
+  background-position: center;
   background-size: cover;
-  color: red;
+  color: whitesmoke;
+  background-attachment: fixed;
+}
+.blockquot {
+  padding: 3%;
+  line-height: 15px;
+  font-style: italic;
 }
