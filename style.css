@@ -89,8 +89,8 @@ header {
   color: whitesmoke;
   font-weight: 300;
 }
-/*-----------BUTTONS----------------------
-----------------------------------------*/
+/*=====================================BUTTONS========================================================*/
+input[type="submit"],
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -98,15 +98,16 @@ header {
   padding: 10px 30px;
   text-decoration: none;
   font-weight: 300px;
-
   color: white;
   border: 1px solid #e67e22;
   border-radius: 200px;
 }
+input[type="submit"],
 .btn-full:link,
 .btn-full:visited {
   background-color: #e67e22;
 }
+
 .btn-ghost:link,
 .btn-ghost:visited {
   color: #e67e22;
@@ -116,10 +117,13 @@ header {
 .btn:active {
   background-color: #ffaf58;
 }
-.btn-full:hover,
+
+input[type="submit"]:hover,
+input[type="submit"]:active,
 .btn-full:active {
-  border: 1px solid #ffaf58;
+  border: 3px solid #ffaf58;
 }
+
 .btn-ghost:hover,
 .btn-ghost:active {
   border: 1px solid #ffaf58;
@@ -214,7 +218,7 @@ ion-icon {
 /*=============================HOW IT WORKS===========================SECTION-STEPS============================================================================*/
 .section-steps {
   margin-top: 40%;
-  background-color: lightgrey;
+  background-color: #f4f4f4;
 }
 .steps-box:first-child {
   text-align: right;
@@ -252,19 +256,103 @@ ion-icon {
   border-bottom: 2px solid transparent;
 }
 /*=========================================our cities section========================================*/
-
+.section-cities {
+  background-color: white;
+}
 /*=========================================section-testimonials=====================================*/
 
 .testimonials {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.7)),
     url(Best-Indian-Diet-Plan.jpg);
   background-position: center;
   background-size: cover;
   color: whitesmoke;
   background-attachment: fixed;
 }
-.blockquot {
-  padding: 3%;
-  line-height: 15px;
-  font-style: italic;
+blockquote {
+  line-height: 25px;
+  color: white;
+  position: relative;
 }
+
+blockquote:before {
+  content: "\201C"; /*for double quote*/
+  font-size: 500%;
+  position: absolute;
+  left: -25px; /*positioning on the basis of parent elment*/
+  top: 7px;
+}
+
+/*=========================================SECTION PLANS========================================*/
+
+.section-plans {
+  background-color: #f4f4f4f8;
+}
+.plan-box {
+  background-color: white;
+  border-radius: 15px;
+  width: 80%;
+  margin-left: 20%;
+  box-shadow: 0 2px 2px rgb(240, 236, 236);
+}
+.plan-box div {
+  border-bottom: 1px solid rgb(211, 208, 208);
+  padding: 10px;
+}
+.plan-box div:first-child {
+  background-color: rgba(235, 235, 235, 0.925);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.plan-box div:last-child {
+  border: 0 none;
+  text-align: center;
+}
+.plan-price {
+  font-size: 250%;
+  color: #e67e22;
+  margin: 3px 0;
+}
+.plan-price span {
+  font-size: 30%;
+}
+.plan-box ul {
+  list-style: none;
+  padding: 5px;
+}
+.plan-box ul li {
+  padding: 3px 0;
+}
+
+.plan-per-meal {
+  font-size: 80%;
+  padding: 0;
+}
+/*=========================================SECTION FORMS========================================*/
+.section-form {
+  background-color: white;
+}
+.contact-form {
+  width: 80%;
+  margin: 0 auto;
+}
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #e67e22;
+  border-radius: 5px;
+}
+textarea {
+  height: 80px;
+}
+input[type="checkbox"] {
+  margin: 10px 5px 10px 0;
+}
+/*This will remove the black border while select any field*/
+*:focus {
+  outline: none;
+}
+/*=========================================SECTION FORMS========================================*/
