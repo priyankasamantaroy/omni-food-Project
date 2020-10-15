@@ -355,4 +355,48 @@ input[type="checkbox"] {
 *:focus {
   outline: none;
 }
-/*=========================================SECTION FORMS========================================*/
+/*=========================================FOOTER========================================*/
+footer {
+  background-color: rgb(46, 46, 46);
+  padding: 30px;
+}
+
+.footer-nav {
+  float: left;
+  list-style: none;
+}
+.social-links {
+  float: right;
+  list-style: none;
+  font-size: 60%;
+}
+
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited {
+  text-decoration: none;
+  color: #888;
+  transition: color 0.2s;
+  border: 0;
+}
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  border-bottom: transparent;
+}
+
+.footer-nav li a:hover,
+.social-links li a:hover .footer-nav li a:active,
+.social-links li a:active {
+  color: #ddd;
+}
+footer p {
+  text-align: center;
+  color: #888;
+  font-size: 90%;
+  margin-top: 30px;
+}
